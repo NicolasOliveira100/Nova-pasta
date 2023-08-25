@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Carter+One&family=Inconsolata:wght@300;400&family=Righteous&display=swap');
+/*
+font-family: 'Barriecito', cursive;
+font-family: 'Carter One', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Righteous', cursive;
+*/
+
+*{
+    margin: 0px;
+    font-family: 'Inconsolata', monospace;
+}
+
+:root{
+
+    --size-bezel: .5rem;
+    --size-radius: 4px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+body, html{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-contorno-abstrato-desenhado-a-mao_23-2150627646.jpg?w=1380&t=st=1692151994~exp=1692152594~hmac=25681cd70652f423814a651229625bdb05bee3ce66e78e749bd3a5215afcb695);
+}
+
+
+.parallax_form{
+    /* Imagem usada */
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-preto-com-textura-de-papel-amora_53876-129708.jpg?w=1380&t=st=1692147857~exp=1692148457~hmac=f62f96a125f1df5d5a4823054b5260978f26e93743cdc2609e01f522c84906c6;);
+
+    
+    /* Define o tamanho minimo da imagem */
+    min-height: 600px;
+
+    /* Cria o efeito de Scroll Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form_header{
+    height: 100px;
+    width: 80%;
+    font-size: 28px;
+    color: white;
+    gap: 7px;
+    display: flex;
+    align-items: center;
+
+}
+.title{
+    width: 314px;
+    height: 55px;
+    border-bottom: 2px solid white ;
+}
+.form_header a{
+    font-size: 15px;
+    color: white;
+    padding-top: 53px;
+    text-decoration: none;
+}
+
+form{
+    width: 80%;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.input_box {
+    background-color: rgb(208, 208, 56);
+    height: 200px;
+    width: 400px;
+}
+
+
+
+
+input,
+span,
+label {
+    display: block;
+    border: none;
+    font-size: 22px;
+    margin: 10px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input.question {
+    border-radius: 2px;
+    margin: px;
+    border: none;
+    font-size: 48px;
+    font-weight: 300;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: padding-top 0.2 ease, margin-top 0.2s ease;
+    overflow-x: hidden;
+}
+
+
+
+
+input.question + label {
+    display: block;
+    position:relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    border-top: 1px solid rgb(0, 0, 0);
+    -webkit-animation: width 0.4s ease;
+    transition: width 0.4 ease;
+    height: 0px;
+}
+
+input.question + label {
+    width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+    padding-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+    top: -100px;
+    font-size: 22px;
+    color: #000000;
+}
+
+input.question:invalid {
+    box-shadow: none;
+}
+
+input.question + label > span {
+    font-weight: 200;
+    margin: 0;
+    position: absolute;
+    color: #ffffff;
+    font-size: 48px;
+    top: -66px;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+/* teste */
+
+input[type="submit"] {
+    -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+    transition: opacity 0.2s ease, background 0.2s ease;
+    display: block;
+    opacity: 1; /* Defina a opacidade padrão */
+    margin: 10px 0 0 0;
+    padding: 10px;
+    cursor: pointer;
+    background: #ccc; /* Adicione uma cor de fundo padrão */
+  }
+  
+  input[type="submit"]:hover {
+    background: #eee;
+  }
+  
+  input[type="submit"]:active {
+    background: #d00b0b;
+  }
+  
+  input.question:valid ~ input[type="submit"],
+  textarea.question:valid ~ input[type="submit"] {
+    -webkit-animation: appear 1s forwards;
+    animation: appear 1s forwards;
+  }
+  
+  input.question:invalid ~ input[type="submit"] {
+    display: none;
+  }
+  
+  @-webkit-keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+  
