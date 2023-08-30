@@ -6,15 +6,38 @@ font-family: 'Inconsolata', monospace;
 font-family: 'Righteous', cursive;
 */
 
-*{
-    margin: 0px;
-    font-family: 'Inconsolata', monospace;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 50,5%;
 }
 
 :root{
-
-    --size-bezel: .5rem;
-    --size-radius: 4px;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -31,19 +54,14 @@ body, html{
 .parallax_form{
     /* Imagem usada */
     background-image: url(https://img.freepik.com/fotos-gratis/fundo-preto-com-textura-de-papel-amora_53876-129708.jpg?w=1380&t=st=1692147857~exp=1692148457~hmac=f62f96a125f1df5d5a4823054b5260978f26e93743cdc2609e01f522c84906c6;);
-
-    
     /* Define o tamanho minimo da imagem */
     min-height: 600px;
-
     /* Cria o efeito de Scroll Parallax */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     margin: 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,13 +77,14 @@ body, html{
     gap: 7px;
     display: flex;
     align-items: center;
-
 }
+
 .title{
     width: 314px;
     height: 55px;
     border-bottom: 2px solid white ;
 }
+
 .form_header a{
     font-size: 15px;
     color: white;
@@ -77,137 +96,36 @@ form{
     width: 80%;
     height: 400px;
     background-color: aqua;
-    display: flex;
-    flex-direction: column;
+    
     gap: 10px;
 }
 
-
-.input_box {
-    background-color: rgb(208, 208, 56);
-    height: 200px;
+.form__input {
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
     width: 400px;
+    height: 60px;
+    display: flex;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
 }
 
-
-
-
-input,
-span,
-label {
-    display: block;
-    border: none;
-    font-size: 22px;
-    margin: 10px;
-    padding: 5px;
+.form__label {
+  font-size: 1.2rem;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
 }
 
-input:focus {
-    outline: 0;
+.form__input:placeholder-shown + .form__label {
+  opacity: 1;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
 }
-
-input.question {
-    border-radius: 2px;
-    margin: px;
-    border: none;
-    font-size: 48px;
-    font-weight: 300;
-    width: 100%;
-    background: rgba(0, 0, 0, 0);
-    transition: padding-top 0.2 ease, margin-top 0.2s ease;
-    overflow-x: hidden;
-}
-
-
-
-
-input.question + label {
-    display: block;
-    position:relative;
-    white-space: nowrap;
-    padding: 0;
-    margin: 0;
-    width: 10%;
-    border-top: 1px solid rgb(0, 0, 0);
-    -webkit-animation: width 0.4s ease;
-    transition: width 0.4 ease;
-    height: 0px;
-}
-
-input.question + label {
-    width: 80%;
-}
-
-input.question:focus,
-input.question:valid {
-    padding-top: 35px;
-}
-
-input.question:focus + label > span,
-input.question:valid + label > span {
-    top: -100px;
-    font-size: 22px;
-    color: #000000;
-}
-
-input.question:invalid {
-    box-shadow: none;
-}
-
-input.question + label > span {
-    font-weight: 200;
-    margin: 0;
-    position: absolute;
-    color: #ffffff;
-    font-size: 48px;
-    top: -66px;
-    left: 0px;
-    z-index: 1;
-    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
-    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
-}
-
-
-/* teste */
-
-input[type="submit"] {
-    -webkit-transition: opacity 0.2s ease, background 0.2s ease;
-    transition: opacity 0.2s ease, background 0.2s ease;
-    display: block;
-    opacity: 1; /* Defina a opacidade padrão */
-    margin: 10px 0 0 0;
-    padding: 10px;
-    cursor: pointer;
-    background: #ccc; /* Adicione uma cor de fundo padrão */
-  }
-  
-  input[type="submit"]:hover {
-    background: #eee;
-  }
-  
-  input[type="submit"]:active {
-    background: #d00b0b;
-  }
-  
-  input.question:valid ~ input[type="submit"],
-  textarea.question:valid ~ input[type="submit"] {
-    -webkit-animation: appear 1s forwards;
-    animation: appear 1s forwards;
-  }
-  
-  input.question:invalid ~ input[type="submit"] {
-    display: none;
-  }
-  
-  @-webkit-keyframes appear {
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes appear {
-    100% {
-      opacity: 1;
-    }
-  }
-  

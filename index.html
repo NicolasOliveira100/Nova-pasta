@@ -15,23 +15,20 @@
             </div>
             <a href="">Já é registrado? Faça o login!</a>
         </div>
-        <form action="">
-            <div class="input_box">  
-                <input type="text" name="primnome" class="question" required autocomplete="off">
-                <label for="fname"><span>Primeiro Nome</span></label>                
-            </div>
-            <div class="input_box">  
-                <input type="text" name="segnome" class="question" required autocomplete="off">
-                <label for="fname"><span>Segundo Nome</span></label>                
-            </div>
-            <div class="input_box">  
-                <input type="text" name="telefone" class="question" required autocomplete="off">
-                <label for="fname"><span>Telefone</span></label>                
-            </div>
-            <div class="input_box">  
-                <input type="text" name="email" class="question" required autocomplete="off">
-                <label for="fname"><span>E-Mail</span></label>                
-            </div>
+        <form action="" class="form__group"> 
+                <input type="text" name="primnome" class="form__input" required autocomplete="off" placeholder="Nome">
+                <label for="primnome" class="form__label">Nome</label>
+                <input type="text" name="segnome" class="form__input" required autocomplete="off" placeholder="Sobrenome">
+                <label for="segnome" class="form__label">Sobrenome</label>
+                <input type="text" name="telefone" class="form__input" required autocomplete="off" placeholder="Telefone">
+                <label for="telefone" class="form__label">Telefone</label>
+                <input type="email" name="email" class="form__input" required autocomplete="off" placeholder="E-mail">
+                <label for="email" class="form__label">E-mail</label>
+            
+
+
+
+
             <input type="submit" value="Submit!" />
         </form>
         <div class="button_box">
