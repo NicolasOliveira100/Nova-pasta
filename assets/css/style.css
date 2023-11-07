@@ -55,13 +55,40 @@ body, html{
 
 }
 
+.background {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: linear-gradient(180deg, rgb(247, 247, 12) 40%, transparent, gray), url(https://img.freepik.com/fotos-gratis/cara-um-eletricista-trabalhando-em-uma-central-telefonica-com-fusiveis-instalacao-e-conexao-de-equipamentos-eletricos-fechar-se_169016-5076.jpg?size=626&ext=jpg&ga=GA1.1.668575655.1699287998&semt=ais);
+}
+
 .start {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(180deg, yellow 50%, transparent), url(https://img.freepik.com/fotos-gratis/cara-um-eletricista-trabalhando-em-uma-central-telefonica-com-fusiveis-instalacao-e-conexao-de-equipamentos-eletricos-fechar-se_169016-5076.jpg?size=626&ext=jpg&ga=GA1.1.668575655.1699287998&semt=ais);
+  background-color: transparent;
+  display: ;
+  align-items: center;
+  justify-content: center;
 }
 
+.start img {
+  width: 500px;
+  margin-left: 70px;
+  margin-top: 7px;
+  background-color: transparent;
+}
 
+.text_start {
+  
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color:blue;
+}
 
 
 
