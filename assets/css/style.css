@@ -23,7 +23,7 @@ font-family: 'Righteous', cursive;
     --pink: #e83e8c;
     --red: #dc3545;
     --orange: #fd7e14;
-    --yellow: #ffc107;
+    --yellow: #ffc107 opacity 0,6;
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
@@ -50,10 +50,43 @@ body, html{
     background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-contorno-abstrato-desenhado-a-mao_23-2150627646.jpg?w=1380&t=st=1692151994~exp=1692152594~hmac=25681cd70652f423814a651229625bdb05bee3ce66e78e749bd3a5215afcb695);
 }
 
+.container {
+    
+
+}
+
+.start {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg, yellow 50%, transparent), url(https://img.freepik.com/fotos-gratis/cara-um-eletricista-trabalhando-em-uma-central-telefonica-com-fusiveis-instalacao-e-conexao-de-equipamentos-eletricos-fechar-se_169016-5076.jpg?size=626&ext=jpg&ga=GA1.1.668575655.1699287998&semt=ais);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .parallax_form{
     /* Imagem usada */
-    background-image: url(https://img.freepik.com/fotos-gratis/fundo-preto-com-textura-de-papel-amora_53876-129708.jpg?w=1380&t=st=1692147857~exp=1692148457~hmac=f62f96a125f1df5d5a4823054b5260978f26e93743cdc2609e01f522c84906c6;);
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-azul-de-memphis-com-meios-tons-e-elementos-de-linha_1017-33622.jpg?w=826&t=st=1699288033~exp=1699288633~hmac=f9f1d8e629e66567332f4bff1c3f845241960ef0f4add890e8205a4df5756fd9);
     /* Define o tamanho minimo da imagem */
     min-height: 600px;
     /* Cria o efeito de Scroll Parallax */
@@ -95,37 +128,208 @@ body, html{
 form{
     width: 80%;
     height: 400px;
-    background-color: aqua;
-    
+    background-color: transparent;
     gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form__input {
-    color: #333;
+    color: #ffffff;
     font-size: 1.2rem;
-    border-radius: 0.2rem;
-    background-color: rgb(255, 255, 255);
-    border: none;
+    background-color: transparent;
     width: 400px;
     height: 60px;
     display: flex;
-    border-bottom: 0.3rem solid transparent;
+    border-bottom: 1px solid black;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
     transition: all 0.3s;
 }
 
 .form__label {
+  font-size: 1.0rem;
   font-size: 1.2rem;
-  font-size: 1.2rem;
-  margin-left: 2rem;
-  margin-top: 0.7rem;
+  margin-left: 0.4rem;
+  margin-top: 0.2rem;
   display: block;
   transition: all 0.3s;
   transform: translateY(0rem);
 }
 
 .form__input:placeholder-shown + .form__label {
-  opacity: 1;
+  opacity: 0.5;
   visibility: hidden;
-  -webkit-transform: translateY(-4rem);
-  transform: translateY(-4rem);
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
 }
+
+
+.rodape{
+  width: 100%;
+  height: 400px;
+  display: flex;  
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;  
+}
+
+.container_alinhamento{
+  background-color: rgb(0, 0, 0);
+  width: 90%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.conteudo_rodape{
+  background-color: rgb(0, 0, 0);
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: 0px;
+  align-items: center;
+  gap: 60px;
+}
+
+.lista1{
+  font-family: 'Poltawski Nowy', serif;
+  font-size: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: -1px;
+}
+
+.textl2{
+  font-family: 'Poltawski Nowy', serif;
+  color: white;
+  font-size: 25px;
+}
+.lista2{
+  font-family: 'Poltawski Nowy', serif;
+  font-size: 15px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: -1px;
+}
+.lista3{
+  font-family: 'Poltawski Nowy', serif;
+  font-size: 15px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: -1px;
+}
+.icons{
+  width: 250px; 
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.texticons{
+  background-color: rgb(0, 0, 0);
+  font-family: 'Poltawski Nowy', serif;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons2{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 200px;
+  height: 80px;
+}
+.imgicons{
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.iconsre{
+  width: 40px;
+  height: 40px;
+}
+
+.linha-horizontal {
+  height: 0.1px;
+  width: 1200px;
+  background-color: rgb(194, 191, 191);
+  margin: 0px 0;
+}
+
+.underline{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pais{
+  font-size: 14px;
+  color: white;
+  letter-spacing: px;
+  font-family: 'Poltawski Nowy', serif;
+
+
+
+}
+.PDP{
+  font-size: 13px;
+  color: white;
+  font-family: 'Poltawski Nowy', serif;
+}
+.TDU{
+  font-size: 13px;
+  color: white;
+  font-family: 'Poltawski Nowy', serif;
+}
+.direitos{
+  font-size: 13px;
+  color: rgb(194, 191, 191);
+  margin-left: 70px;
+  
+}
+
+a:link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:visited{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(194, 191, 191);
+  text-decoration: none;
+} 
