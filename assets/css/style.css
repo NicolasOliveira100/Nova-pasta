@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Carter+One&family=Inconsolata:wght@300;400&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&display=swap');
 /*
 font-family: 'Barriecito', cursive;
 font-family: 'Carter One', cursive;
@@ -64,31 +65,65 @@ body, html{
   background-image: linear-gradient(180deg, rgb(247, 247, 12) 40%, transparent, gray), url(https://img.freepik.com/fotos-gratis/cara-um-eletricista-trabalhando-em-uma-central-telefonica-com-fusiveis-instalacao-e-conexao-de-equipamentos-eletricos-fechar-se_169016-5076.jpg?size=626&ext=jpg&ga=GA1.1.668575655.1699287998&semt=ais);
 }
 
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color:cadetblue;
+  align-items: center;
+}
+
+.header img {
+  width: 30%;
+  height: 100%;
+  
+}
+
+.icon {
+  background-color: #28a745;
+  font-family: 'Gabarito', sans-serif;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+}
+
+.tel_icon {
+  color: white;
+}
+
+
 .start {
   width: 100%;
   height: 100vh;
   background-color: transparent;
-  display: ;
-  align-items: center;
-  justify-content: center;
-}
-
-.start img {
-  width: 500px;
-  margin-left: 70px;
-  margin-top: 7px;
-  background-color: transparent;
-}
-
-.text_start {
+  display: flex;
   
 }
 
-.header {
-  width: 100%;
-  height: 100px;
-  background-color:blue;
+.start_img {
+  width: 40%;
+  height: 89.5%;
+  background-color: transparent;
 }
+
+.start_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.text_start {
+  width: 60%;
+  height: 89.5%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 50px;
+}
+
 
 
 
