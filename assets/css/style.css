@@ -48,6 +48,7 @@ font-family: 'Righteous', cursive;
   }
 
 body, html{
+  margin: 0;
     background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-contorno-abstrato-desenhado-a-mao_23-2150627646.jpg?w=1380&t=st=1692151994~exp=1692152594~hmac=25681cd70652f423814a651229625bdb05bee3ce66e78e749bd3a5215afcb695);
 }
 
@@ -62,36 +63,57 @@ body, html{
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
-  background-image: linear-gradient(180deg, rgb(247, 247, 12) 40%, transparent, gray), url(https://img.freepik.com/fotos-gratis/cara-um-eletricista-trabalhando-em-uma-central-telefonica-com-fusiveis-instalacao-e-conexao-de-equipamentos-eletricos-fechar-se_169016-5076.jpg?size=626&ext=jpg&ga=GA1.1.668575655.1699287998&semt=ais);
+  background-image: linear-gradient(180deg, rgb(247, 247, 12) 40%, transparent, gray), url(../images/fundostart.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
 .header {
   width: 100%;
   height: 100px;
   display: flex;
-  background-color:cadetblue;
+  background-color: black;
   align-items: center;
 }
 
 .header img {
-  width: 30%;
+  width: 40%;
   height: 100%;
   
 }
 
-.icon {
-  background-color: #28a745;
+.header_tel {
+  background-color: rgb(30, 244, 80);
   font-family: 'Gabarito', sans-serif;
+  border-right: solid white 2px;
+  font-size: 25px;
   display: flex;
   align-items: center;
-  width: 300px;
-  height: 50px;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
 }
 
 .tel_icon {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
+.container_wpp_button {
+  width: 200px;
+  height: 60px;
+  background-color: #17a2b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_wpp_button button {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #008000;
+}
 
 .start {
   width: 100%;
@@ -103,14 +125,17 @@ body, html{
 
 .start_img {
   width: 40%;
-  height: 89.5%;
+  height: 540px;
+  margin-top: 56px;
+  display: flex;
   background-color: transparent;
 }
 
 .start_img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  margin-top: 48.5px;
+  object-fit: cover;
 }
 
 .text_start {
